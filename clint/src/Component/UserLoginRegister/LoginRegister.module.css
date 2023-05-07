@@ -61,3 +61,29 @@
   background-color: transparent;
   color: black;
 }
+.fileLabel {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #1e90ff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.fileLabel input[type='file'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.fileLabel span {
+  letter-spacing: 0;
+  background-color: transparent;
+  color: black;
+}

@@ -20,7 +20,7 @@ function LoginPage(props) {
   };
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    dispatch(Login(userName, password));
+    console.log(userName, password);
   };
   return (
     <form className={classes.form} onSubmit={onSubmitHandler}>
@@ -47,7 +47,11 @@ function LoginPage(props) {
           onChange={onUserInputHandler}
         />
       </div>
-      <button type='submit' className={classes.btn}>
+      <button
+        type='submit'
+        disabled={btnDisabled}
+        className={btnDisabled ? classes.btnDis : classes.btn}
+      >
         Login
       </button>
       <p className={classes.regBtn} onClick={onClickHandler}>
