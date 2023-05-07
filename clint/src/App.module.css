@@ -1,0 +1,26 @@
+* {
+  margin: 10px auto;
+  font-family: 'Sono', sans-serif;
+  box-sizing: border-box;
+  color: white;
+  background-color: #1c1917;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  min-height: 700px;
+  max-height: 100vh;
+  overflow: scroll;
+  border: 1px solid white;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    border: 1px solid rgb(77, 77, 77);
+  }
+}

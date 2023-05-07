@@ -1,0 +1,22 @@
+.Icons {
+  position: absolute;
+  margin: 0;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+  padding: 10px;
+}
+.icon {
+  margin: 0;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icon:hover {
+  color: blue;
+  fill: blue;
+}

@@ -1,0 +1,13 @@
+.userIcon {
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.homePageCont {
+  position: relative;
+}
+.welcomeText {
+  position: absolute;
+  right: 2%;
+  top: 0;
+}
