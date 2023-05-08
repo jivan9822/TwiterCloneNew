@@ -14,7 +14,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://tweetclone2.onrender.com'],
+    origin: [
+      'http://localhost:5173',
+      'https://thunderous-elf-ab0e92.netlify.app',
+    ],
     credentials: true,
   })
 );
