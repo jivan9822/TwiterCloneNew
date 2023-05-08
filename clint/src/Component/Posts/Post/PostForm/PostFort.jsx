@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import classes from './postform.module.css';
+import classes from './PostForm.module.css';
 import { useSelector } from 'react-redux';
 
 const PostForm = () => {
