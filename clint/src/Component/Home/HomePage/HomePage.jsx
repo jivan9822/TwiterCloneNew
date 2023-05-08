@@ -4,6 +4,7 @@ import classes from './HomePage.module.css';
 import { FaUser } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import DisplayPost from '../../Posts/Post/DisplayPost/DisplayPost';
+import PostForm from '../../Posts/Post/PostForm/PostFort';
 
 const HomePage = (props) => {
   const user = useSelector((state) => state.user.loginUser);
@@ -24,6 +25,7 @@ const HomePage = (props) => {
         </span>
       </p>
       {showIcon && <HomePageIcon setShowIcon={setShowIcon} />}
+      <PostForm />
       <DisplayPost />
     </div>
   );
