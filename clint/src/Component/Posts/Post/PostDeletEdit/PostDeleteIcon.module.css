@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 3px;
+  margin: 0;
 }
 .delBtn,
 .edtBtn {
   cursor: pointer;
+  fill: rgb(93, 93, 93);
 }

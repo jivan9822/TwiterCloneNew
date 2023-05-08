@@ -1,8 +1,11 @@
 .postDisplayCont {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(55, 55, 55);
   width: 90%;
+  border-radius: 10px;
+  padding: 10px;
 }
 .postDisplayCont img {
   border-radius: 50%;
@@ -26,9 +29,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  box-sizing: border-box;
 }
 .contentTitle p {
-  padding: 5px;
+  /* padding: 5px; */
+  margin: 0;
 }
 pre {
   background-color: #f5f5f5;
@@ -43,19 +49,24 @@ code {
 }
 .IconDiv {
   display: flex;
+  align-items: center;
+  gap: 10%;
   margin: 0;
+  margin-left: 10%;
 }
 .icon {
   fill: rgb(255, 182, 182);
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  margin: 0;
 }
 .showReply {
   padding: 5px;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  margin: 0;
 }
 .showReply:hover {
   background-color: rgba(5, 22, 255, 0.435);
@@ -66,9 +77,10 @@ code {
   padding-left: 5px;
 }
 .title {
+  margin: 0;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: white;
-  color: black;
+  color: brown;
+
   border-radius: 20px;
 }
