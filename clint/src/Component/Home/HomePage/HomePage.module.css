@@ -11,3 +11,16 @@
   right: 2%;
   top: 0;
 }
+.welcomeSpan {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
+.welcomeSpan img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border: 1px solid black;
+}
