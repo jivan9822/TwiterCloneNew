@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import classes from './LoginRegister.module.css';
-import { useDispatch } from 'react-redux';
 import { userRegistration } from '../../ApiCalls/UserLoginRegistration';
 
 const RegisterPage = (props) => {
-  const dispatch = useDispatch();
   const [userInputs, setUserInput] = useState({
     lname: '',
     userName: '',
@@ -29,8 +27,7 @@ const RegisterPage = (props) => {
     Object.entries(userInputs).forEach(([key, value]) => {
       formData.append(key, value);
     });
-    console.log(userInputs);
-    dispatch(userRegistration(formData));
+    userRegistration(formData, props.onLoginClick);
   };
   const onClickHandler = (e) => {
     e.preventDefault();

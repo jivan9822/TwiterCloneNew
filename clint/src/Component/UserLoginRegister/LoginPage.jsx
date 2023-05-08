@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import classes from './LoginRegister.module.css';
+import { useDispatch } from 'react-redux';
+import { userLogin } from '../../ApiCalls/UserLoginRegistration';
 
 function LoginPage(props) {
+  const dispatch = useDispatch();
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [userName, setUserName] = useState('');
   const [password, setUserPass] = useState('');
@@ -20,7 +23,7 @@ function LoginPage(props) {
   };
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    console.log(userName, password);
+    dispatch(userLogin({ userName, password }));
   };
   return (
     <form className={classes.form} onSubmit={onSubmitHandler}>
