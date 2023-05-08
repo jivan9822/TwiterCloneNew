@@ -20,7 +20,7 @@ const PostForm = () => {
     <div className={classes.postFormContainer}>
       <div className={classes.postForm}>
         <div className={classes.container}>
-          <img src={user.profilePic} className={classes.img} />
+          <img src={user?.profilePic} className={classes.img} />
           <textarea
             className={classes.textarea}
             autoFocus
