@@ -11,23 +11,25 @@ const HomePage = (props) => {
   const [showIcon, setShowIcon] = useState(false);
 
   return (
-    <div className={classes.homePageCont}>
-      {!showIcon && (
-        <FaUser
-          className={classes.userIcon}
-          onClick={() => setShowIcon(true)}
-        />
-      )}
-      <p className={classes.welcomeText}>
-        <span className={classes.welcomeSpan}>
-          <span> Welcome-{user?.fname} </span>
-          <img src={user?.profilePic} alt='User Profile Pic' />
-        </span>
-      </p>
-      {showIcon && <HomePageIcon setShowIcon={setShowIcon} />}
-      <PostForm />
-      <DisplayPost />
-    </div>
+    user && (
+      <div className={classes.homePageCont}>
+        {!showIcon && (
+          <FaUser
+            className={classes.userIcon}
+            onClick={() => setShowIcon(true)}
+          />
+        )}
+        <p className={classes.welcomeText}>
+          <span className={classes.welcomeSpan}>
+            <span> Welcome-{user?.fname} </span>
+            <img src={user?.profilePic} alt='User Profile Pic' />
+          </span>
+        </p>
+        {showIcon && <HomePageIcon setShowIcon={setShowIcon} />}
+        <PostForm />
+        <DisplayPost />
+      </div>
+    )
   );
 };
 
