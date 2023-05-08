@@ -57,3 +57,12 @@ exports.isLogin = CatchAsync(async (req, res, next) => {
     },
   });
 });
+
+exports.userLogOut = CatchAsync(async (req, res, next) => {
+  setUserAuth(req.user._id, null); // catch
+  res.cookie('jwt', null);
+  res.status(200).json({
+    status: true,
+    message: 'LogOut Success!',
+  });
+});

@@ -55,3 +55,17 @@ export const isLogin = () => {
       });
   };
 };
+
+export const logOut = () => {
+  return (dispatch) => {
+    axios
+      .get(`${PROXY}/user/logOut`, { withCredentials: true })
+      .then((res) => {
+        console.log(res);
+        dispatch(userAction.setUserLogout());
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+};
