@@ -34,8 +34,8 @@
 }
 
 .content {
-  margin: 0;
   font-family: sans-serif, cursive;
+  word-break: break-all;
   font-size: 4vw;
 }
 pre {
