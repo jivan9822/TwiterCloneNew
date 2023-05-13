@@ -1,12 +1,35 @@
 .editDeleteBtn {
+  margin: 0;
+  display: flex;
+  margin-right: 1%;
+  gap: 10%;
+}
+
+.text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 3px;
+  color: black;
+  font-weight: bold;
   margin: 0;
+  background-color: rgba(255, 255, 255, 0.333);
+  font-size: 16px;
+  position: absolute;
+  width: max-content;
+  height: 35px;
+  opacity: 0;
+  transition: 0.5s;
 }
-.delBtn,
-.edtBtn {
+.thumbnail {
+  margin: auto;
+}
+.thumbnail:hover .text {
+  opacity: 1;
+}
+.iconDelE {
+  font-size: 2vw;
   cursor: pointer;
-  fill: rgb(93, 93, 93);
+  margin: 0;
+  color: black;
 }

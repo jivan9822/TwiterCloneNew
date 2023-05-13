@@ -32,9 +32,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-.contentTitle p {
-  /* padding: 5px; */
+
+.content {
   margin: 0;
+  font-family: sans-serif, cursive;
+  font-size: 2vw;
 }
 pre {
   background-color: #f5f5f5;
@@ -49,27 +51,32 @@ code {
 }
 .IconDiv {
   display: flex;
-  align-items: center;
-  gap: 10%;
+  height: 20px;
+  overflow: hidden;
+  gap: 2%;
   margin: 0;
-  margin-left: 10%;
+  font-size: 2vw;
+}
+.thumbnail {
+  margin: auto;
 }
 .icon {
-  fill: rgb(255, 182, 182);
-  border-radius: 20px;
+  font-size: 2vw;
   cursor: pointer;
-  transition: 0.5s;
   margin: 0;
+}
+.retweet {
+  cursor: help;
 }
 .showReply {
-  padding: 5px;
-  border-radius: 20px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  transition: 0.5s;
   margin: 0;
+  gap: 10px;
 }
-.showReply:hover {
-  background-color: rgba(5, 22, 255, 0.435);
+.showReply p {
+  margin: 0;
 }
 .delEdtCont {
   display: flex;
@@ -80,7 +87,36 @@ code {
   margin: 0;
   padding-left: 5px;
   padding-right: 5px;
-  color: brown;
-
+  color: white;
+  font-family: sans-serif;
   border-radius: 20px;
+  font-weight: bold;
+  font-size: 2vw;
+  background-color: rgba(166, 0, 155, 0.744);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.333);
+  font-size: 2vw;
+  position: absolute;
+  width: max-content;
+  height: 35px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.thumbnail:hover .text {
+  opacity: 1;
+}
+.imgDelDiv {
+  display: flex;
+  width: 100%;
+  height: 10px;
+  justify-content: space-between;
 }

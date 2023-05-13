@@ -4,8 +4,22 @@ import { FaTrash, FaEdit } from 'react-icons/fa';
 const PostDeleteEdit = (props) => {
   return (
     <div className={classes.editDeleteBtn}>
-      <FaTrash fill='black' className={classes.delBtn} />
-      <FaEdit fill='black' className={classes.edtBtn} />
+      <div className={classes.thumbnail}>
+        <span className={`material-symbols-sharp ${classes.iconDelE}`}>
+          delete
+        </span>
+        <div className={classes.overlay}>
+          <p className={classes.text}>Delete</p>
+        </div>
+      </div>
+      <div className={classes.thumbnail}>
+        <span className={`material-symbols-sharp ${classes.iconDelE}`}>
+          edit
+        </span>
+        <div className={classes.overlay}>
+          <p className={classes.text}>Edit</p>
+        </div>
+      </div>
     </div>
   );
 };

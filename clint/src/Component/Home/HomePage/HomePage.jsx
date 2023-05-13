@@ -9,24 +9,30 @@ import PostForm from '../../Posts/Post/PostForm/PostFort';
 const HomePage = (props) => {
   const user = useSelector((state) => state.user.loginUser);
   const [showIcon, setShowIcon] = useState(false);
+  const [showPostForm, setShowPostForm] = useState(false);
 
   return (
     user && (
       <div className={classes.homePageCont}>
         {!showIcon && (
-          <FaUser
-            className={classes.userIcon}
-            onClick={() => setShowIcon(true)}
-          />
+          <div className={classes.addDiv}>
+            <span
+              onClick={() => setShowIcon(true)}
+              className={`${classes.userIcon} material-symbols-sharp`}
+            >
+              account_circle
+            </span>
+            <div className={classes.addPostDiv}>
+              <h1>ADD-POST</h1>
+              <span className={classes.welcomeSpan}>
+                <span> Welcome-{user?.fname} </span>
+                <img src={user?.profilePic} alt='User Profile Pic' />
+              </span>
+            </div>
+          </div>
         )}
-        <p className={classes.welcomeText}>
-          <span className={classes.welcomeSpan}>
-            <span> Welcome-{user?.fname} </span>
-            <img src={user?.profilePic} alt='User Profile Pic' />
-          </span>
-        </p>
         {showIcon && <HomePageIcon setShowIcon={setShowIcon} />}
-        <PostForm />
+        {showPostForm && <PostForm />}
         <DisplayPost />
       </div>
     )
