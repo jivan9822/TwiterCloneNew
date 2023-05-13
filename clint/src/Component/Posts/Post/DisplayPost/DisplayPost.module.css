@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(55, 55, 55);
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
-  padding: 10px;
+  padding: 1px;
 }
 .postDisplayCont img {
   border-radius: 50%;
