@@ -51,17 +51,17 @@ code {
 }
 .IconDiv {
   display: flex;
-  height: 20px;
+  height: max-content;
   overflow: hidden;
   gap: 2%;
   margin: 0;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 .thumbnail {
   margin: auto;
 }
 .icon {
-  font-size: 2vw;
+  font-size: 4vw;
   cursor: pointer;
   margin: 0;
 }
