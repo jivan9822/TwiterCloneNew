@@ -36,7 +36,7 @@
 .content {
   margin: 0;
   font-family: sans-serif, cursive;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 pre {
   background-color: #f5f5f5;
@@ -91,7 +91,7 @@ code {
   font-family: sans-serif;
   border-radius: 20px;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 4vw;
   background-color: rgba(166, 0, 155, 0.744);
 }
 
