@@ -24,6 +24,7 @@ const DisplayPostHelper = ({ post }) => {
           <p className={classes.content}>{content}</p>
         </div>
       </div>
+      <div className={classes.line}></div>
       <PostIcons />
     </div>
   );
